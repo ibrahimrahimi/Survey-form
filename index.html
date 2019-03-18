@@ -3,6 +3,7 @@
     <head>
         <title>Survey Form</title>
         <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     </head>
     <body>
         <div id="main">
@@ -10,34 +11,42 @@
             <div id="content">
                 <p id="description">Let us know we can improve freeCodeCamp</p>
                 <form id="survey-form" action="#">
-                    <label id="name-label" for="name">Name: </label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name" required> <br>
-                    <label id="email-label" for="email">Email: </label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required> <br>
-                    <label id="number-label" for="age">Age: </label>
-                    <input type="number" id="number" name="age" placeholder="Age" min="6" max="100"> <br>
-                    <label for="role">Which option best describes your current role? </label>
-                    <select name="role" id="dropdown">
-                        <option  disabled value="">Select an Option</option>
-                        <option value="student">Student</option>
-                        <option value="full time job">Full Time Job</option>
-                        <option value="full time learner">Full Time Learner</option>
-                        <option value="prefer not to say">Prefer Not to Say</option>
-                        <option value="other">Other</option>
-                    </select> <br>
-                    <label for="recommend">How likely is that you would recommend freeCodeCamp to a friend? </label>
-                    <input type="radio" name="recommend" value="definitly"> Definitly <br>
-                    <input type="radio" name="recommend" value="maybe"> Maybe <br>
-                    <input type="radio" name="recommend" value="not sure"> Not Sure
-                     <br>
-                    <label for="like"> What do you like most in FCC: </label>
-                    <select name="like" id="dropdown">
+                    <div class="form-section">
+                        <label id="name-label" for="name">Name: </label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required> <br>
+                        <label id="email-label" for="email">Email: </label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required> <br>
+                        <label id="number-label" for="age">Age: </label>
+                        <input type="number" id="number" name="age" placeholder="Age" min="6" max="100"> <br>
+                    </div>
+                    <div class="form-section">
+                        <label for="role">Which option best describes your current role? </label>
+                        <select name="role" id="dropdown">
+                            <option  disabled value="">Select an Option</option>
+                            <option value="student">Student</option>
+                            <option value="full time job">Full Time Job</option>
+                            <option value="full time learner">Full Time Learner</option>
+                            <option value="prefer not to say">Prefer Not to Say</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-section">
+                        <label for="recommend">How likely is that you would recommend freeCodeCamp to a friend? </label>
+                        <input type="radio" name="recommend" value="definitly"> Definitly <br>
+                        <input type="radio" name="recommend" value="maybe"> Maybe <br>
+                        <input type="radio" name="recommend" value="not sure"> Not Sure
+                    </div>
+                    <div class="form-section">
+                        <label for="like"> What do you like most in FCC: </label>
+                        <select name="like" id="dropdown">
                             <option  disabled value="">Select an Option</option>
                             <option value="challenges">Challenges</option>
                             <option value="projects">Projects</option>
                             <option value="community">Community</option>
                             <option value="open source">Open Source</option>
-                        </select> <br>
+                        </select>
+                    </div>
+                    <div class="form-section">
                         <label for="future">Things that should be improved in the future (Check all the apply): </label>
                         <input type="checkbox" name="future" value="front-end Projects"> Front-end Projects <br>
                         <input type="checkbox" name="future" value="back-end Projects"> Back-end Projects<br>
@@ -49,10 +58,15 @@
                         <input type="checkbox" name="future" value="city meetups" > City Meetups <br>
                         <input type="checkbox" name="future" value="wiki"> Wiki<br>
                         <input type="checkbox" name="future" value="forum"> Forum <br>
-                        <input type="checkbox" name="future" value="additional courses" > Additional Courses<br>
+                        <input type="checkbox" name="future" value="additional courses" > Additional Courses
+                    </div>
+                    <div class="form-section">
                         <label for="additional-element">Any comments or Suggestions? </label>
-                        <textarea name="additional-element" id="additional-element" cols="40" rows="6" placeholder="Add comments and suggestions"></textarea> <br>
+                        <textarea name="additional-element" id="additional-element" cols="40" rows="6" placeholder="Add comments and suggestions"></textarea>
+                    </div>
+                    <div class="form-section">
                         <input type="submit" id="submit" name="submit" value="Submit">
+                    </div>
                 </form>
             </div>
         </div>
